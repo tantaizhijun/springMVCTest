@@ -7,6 +7,11 @@
   <servlet>
     <servlet-name>DispatcherServlet</servlet-name>
     <servlet-class>com.me.servlet.DispatcherServlet</servlet-class>
+    <!--作为init方法的参数，这里配置扫描包的跟路径-->
+    <init-param>
+      <param-name>scanPackage</param-name>
+      <param-value>com.me</param-value>
+    </init-param>
     <!--启动时加载,执行init方法-->
     <load-on-startup>0</load-on-startup>
   </servlet>
